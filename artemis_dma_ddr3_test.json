@@ -3,6 +3,10 @@
     "board":"artemis_usb2",
     "PROJECT_NAME":"artemis_usb2_default",
     "TEMPLATE":"wishbone_template.json",
+    "defines":{
+      "DDR3_W0_CH":"",
+      "DDR3_R0_CH":""
+    },
     "INTERFACE":{
         "filename":"ft_master_interface.v",
         "bind":{
@@ -189,6 +193,7 @@
         "signal":"dma_o_snk1_data"
       },
 
+
       "dma_test_b_i_read_enable":{
         "signal":"dma_o_src1_enable"
       },
@@ -223,10 +228,77 @@
       },
       "dma_test_b_i_read_strobe":{
         "signal":"dma_o_src1_if_strobe"
-      }
-   },
-   "defines":{
-      "test":"1"
-   }
+      },
 
+      "dma_i_src2_if_ready":{
+        "signal":"r0_read_ready"
+      },
+      "dma_i_src2_if_size":{
+        "signal":"r0_read_size"
+      },
+      "dma_i_src2_if_data":{
+        "signal":"r0_read_data"
+      },
+      "r0_read_addr_inc":{
+        "signal":"dma_o_src2_addr_inc"
+      },
+      "r0_read_addr_dec":{
+        "signal":"dma_o_src2_addr_dec"
+      },
+      "r0_read_enable":{
+        "signal":"dma_o_src2_enable"
+      },
+      "r0_read_addr":{
+        "signal":"dma_o_src2_address"
+      },
+      "r0_read_count":{
+        "signal":"dma_o_src2_count"
+      },
+      "r0_read_flush":{
+        "signal":"dma_o_src2_flush"
+      },
+      "r0_read_activate":{
+        "signal":"dma_o_src2_if_activate"
+      },
+      "r0_read_strobe":{
+        "signal":"dma_o_src2_if_strobe"
+      },
+
+      "w0_write_enable":{
+        "signal":"dma_o_snk2_write_enable"
+      },
+      "w0_write_addr":{
+        "signal":"dma_o_snk2_write_addr"
+      },
+      "w0_write_addr_inc":{
+        "signal":"dma_o_snk2_write_addr_inc"
+      },
+      "w0_write_addr_dec":{
+        "signal":"dma_o_snk2_write_addr_dec"
+      },
+      "dma_i_snk2_write_finished":{
+        "signal":"w0_write_finished"
+      },
+      "w0_write_count":{
+        "signal":"dma_o_snk2_write_count"
+      },
+      "w0_write_flush":{
+        "signal":"dma_o_snk2_flush"
+      },
+      "w0_write_ready":{
+        "signal":"dma_i_snk2_ready"
+      },
+      "w0_write_activate":{
+        "signal":"dma_o_snk2_activate"
+      },
+      "dma_i_snk2_size":{
+        "signal":"w0_write_size"
+      },
+      "w0_write_strobe":{
+        "signal":"dma_o_snk2_strobe"
+      },
+      "w0_write_data":{
+        "signal":"dma_o_snk2_data"
+      }
+   }
 }
