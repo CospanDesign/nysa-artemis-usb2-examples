@@ -3,10 +3,6 @@
     "board":"artemis_usb2",
     "PROJECT_NAME":"artemis_usb2_default",
     "TEMPLATE":"wishbone_template.json",
-    "defines":{
-      "DDR3_W0_CH":"",
-      "DDR3_R0_CH":""
-    },
     "INTERFACE":{
         "filename":"ft_master_interface.v",
         "bind":{
@@ -301,5 +297,13 @@
       "w0_write_data":{
         "signal":"dma_o_snk2_data"
       }
-   }
+   },
+   "build_flags":{
+        "xst":{
+            "flags":{
+                "-define":"{DDR3_W0_CH DDR3_R0_CH}"
+            }
+        }
+    }
+
 }
