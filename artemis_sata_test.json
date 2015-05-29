@@ -125,35 +125,63 @@
     },
     "internal_bind":{
       "artemis_usb2_plat_i_pcie_disparity_mode":{
-        "signal":"2'b0"
-      },
-      "artemis_usb2_plat_i_sata_tx_char_is_k":{
-        "signal":"sata_o_tx_isk"
+        "signal":"4'b0"
       },
       "artemis_usb2_plat_i_pcie_tx_char_is_k":{
-        "signal":"1'b0"
-      },
-      "artemis_usb2_plat_i_sata_tx_data":{
-        "signal":"sata_tx_dout"
+        "signal":"4'b0"
       },
       "artemis_usb2_plat_i_pcie_tx_data":{
         "signal":"32'h0000"
       },
-      "artemis_usb2_plat_i_pcie_tx_detect_rx":{
-        "signal":"1'b0"
-      },
-      "artemis_usb2_plat_i_sata_tx_elec_idle":{
-        "signal":"sata_o_elec_idle"
-      },
       "artemis_usb2_plat_i_pcie_tx_elec_idle":{
         "signal":"1'b0"
       },
-      "artemis_usb2_plat_i_sata_tx_comm_start":{
-        "signal":"o_sata_tx_comm_init"
-      },
-      "artemis_usb2_plat_i_sata_tx_comm_type":{
+      "artemis_usb2_plat_i_pcie_tx_detect_rx":{
         "signal":"1'b0"
-      }
+      },
 
+      "artemis_usb2_plat_i_sata_tx_char_is_k":{
+        "signal":"sata_o_tx_isk"
+      },
+      "artemis_usb2_plat_i_sata_tx_data":{
+        "signal":"sata_o_tx_dout"
+      },
+      "artemis_usb2_plat_i_sata_tx_elec_idle":{
+        "signal":"sata_o_tx_elec_idle"
+      },
+      "artemis_usb2_plat_i_sata_tx_comm_init":{
+        "signal":"sata_o_tx_comm_reset"
+      },
+      "artemis_usb2_plat_i_sata_tx_comm_wake":{
+        "signal":"sata_o_tx_comm_wake"
+      },
+      "sata_i_tx_oob_complete":{
+        "signal":"artemis_usb2_plat_o_sata_tx_oob_complete"
+      },
+      "sata_i_rx_din":{
+        "signal":"artemis_usb2_plat_o_sata_rx_data"
+      },
+      "sata_i_rx_isk":{
+        "signal":"artemis_usb2_plat_o_sata_rx_char_is_k"
+      },
+      "sata_i_rx_elec_idle":{
+        "signal":"artemis_usb2_plat_o_sata_rx_elec_idle"
+      },
+      "sata_i_comm_init_detect":{
+        "signal":"artemis_usb2_plat_o_sata_rx_comm_init_detect"
+      },      
+      "sata_i_comm_wake_detect":{
+        "signal":"artemis_usb2_plat_o_sata_rx_comm_wake_detect"
+      },
+      "sata_i_phy_error":{
+        "signal":"artemis_usb2_plat_o_sata_error"
+      },
+      "sata_sata_75mhz_clk":{
+        "signal":"artemis_usb2_plat_o_sata_75mhz_clk"
+      },
+      "sata_i_platform_ready":{
+        "signal":"artemis_usb2_plat_o_platform_ready"
+      }
+    
    }
 }

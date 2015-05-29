@@ -145,10 +145,10 @@
       "artemis_usb2_plat_i_pcie_tx_elec_idle":{
         "signal":"1'b0"
       },
-      "artemis_usb2_plat_i_sata_tx_comm_start":{
+      "artemis_usb2_plat_i_sata_tx_comm_reset":{
         "signal":"1'b0"
       },
-      "artemis_usb2_plat_i_sata_tx_comm_type":{
+      "artemis_usb2_plat_i_sata_tx_comm_wake":{
         "signal":"1'b0"
       }
 
