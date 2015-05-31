@@ -140,8 +140,9 @@
             "signal":"1'b0"
         },
 
+
         "artemis_usb2_i_sata_tx_char_is_k":{
-            "signal":"sata_o_tx_isk"
+            "signal":"sata_o_tx_is_k"
         },
         "artemis_usb2_i_sata_tx_data":{
             "signal":"sata_o_tx_dout"
@@ -158,10 +159,11 @@
         "sata_i_tx_oob_complete":{
             "signal":"artemis_usb2_o_sata_tx_oob_complete"
         },
+
         "sata_i_rx_din":{
             "signal":"artemis_usb2_o_sata_rx_data"
         },
-        "sata_i_rx_isk":{
+        "sata_i_rx_is_k":{
             "signal":"artemis_usb2_o_sata_rx_char_is_k"
         },
         "sata_i_rx_elec_idle":{
@@ -169,7 +171,7 @@
         },
         "sata_i_comm_init_detect":{
             "signal":"artemis_usb2_o_sata_rx_comm_init_detect"
-        },      
+        },
         "sata_i_comm_wake_detect":{
             "signal":"artemis_usb2_o_sata_rx_comm_wake_detect"
         },
