@@ -141,19 +141,19 @@
         },
 
         "artemis_usb2_i_sata_tx_char_is_k":{
-            "signal":"sata_o_tx_isk"
+            "signal":"4'b0"
         },
         "artemis_usb2_i_sata_tx_data":{
-            "signal":"sata_o_tx_dout"
+            "signal":"32'h0"
         },
         "artemis_usb2_i_sata_tx_elec_idle":{
-            "signal":"sata_o_tx_elec_idle"
+            "signal":"1'b0"
         },
         "artemis_usb2_i_sata_tx_comm_init":{
-            "signal":"sata_o_tx_comm_reset"
+            "signal":"1'b0"
         },
         "artemis_usb2_i_sata_tx_comm_wake":{
-            "signal":"sata_o_tx_comm_wake"
+            "signal":"1'b0"
         },
         "sata_i_tx_oob_complete":{
             "signal":"artemis_usb2_o_sata_tx_oob_complete"
@@ -169,7 +169,7 @@
         },
         "sata_i_comm_init_detect":{
             "signal":"artemis_usb2_o_sata_rx_comm_init_detect"
-        },      
+        },
         "sata_i_comm_wake_detect":{
             "signal":"artemis_usb2_o_sata_rx_comm_wake_detect"
         },
