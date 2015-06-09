@@ -102,8 +102,8 @@
       "filename":"wb_gpio.v",
       "bind":{
         "gpio_out[1:0]":{
-          "loc":"led[1:0]",
-          "direction":"output"
+            "loc":"led[1:0]",
+            "direction":"output"
         },
         "gpio_in[3:2]":{
           "loc":"button[1:0]",
