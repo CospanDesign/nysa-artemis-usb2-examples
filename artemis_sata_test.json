@@ -50,10 +50,7 @@
             "filename":"wb_artemis_usb2_platform.v",
             "constraint_files":[
                 "artemis_pcie_sata_top.ucf",
-            "artemis_usb_gtp_attributes.ucf"
-                ],
-            "cores":[
-                "artemis_pcie_sata.ngc"
+                "artemis_usb_gtp_attributes.ucf"
                 ],
             "bind":{
                 "i_gtp0_clk_p":{
@@ -140,7 +137,6 @@
             "signal":"1'b0"
         },
 
-
         "artemis_usb2_i_sata_tx_char_is_k":{
             "signal":"sata_o_tx_is_k"
         },
@@ -168,6 +164,9 @@
         },
         "sata_i_rx_elec_idle":{
             "signal":"artemis_usb2_o_sata_rx_elec_idle"
+        },
+        "sata_i_rx_byte_is_aligned":{
+            "signal":"artemis_usb2_o_sata_rx_byte_is_aligned"
         },
         "sata_i_comm_init_detect":{
             "signal":"artemis_usb2_o_sata_rx_comm_init_detect"
