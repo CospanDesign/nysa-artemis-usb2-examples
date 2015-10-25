@@ -109,6 +109,8 @@
     "sdio_cis_rom.rom"
   ],
   "constraint_files":[
+    "artemis_bare.ucf",
+    "artemis-usb2.ucf",
     "artemis_sd_host.ucf",
     "artemis_sdio_device.ucf"
   ]
