@@ -1,0 +1,56 @@
+{
+    "BASE_DIR":"~/projects/ibuilder_project",
+    "board":"artemis_usb2",
+    "PROJECT_NAME":"example_project",
+    "TEMPLATE":"wishbone_template.json",
+    "SLAVES":{
+       "pcie":{
+          "filename":"wb_artemis_pcie_platform.v",
+          "constraint_files":[
+          ],
+          "cores":[
+              "pcie_axi_bridge.ngc"
+          ],
+          "bind":{
+               "i_clk_100mhz_gtp_p":{
+                   "loc":"i_gtp1_clk_p",
+                   "direction":"input"
+               },
+               "i_clk_100mhz_gtp_p":{
+                   "loc":"i_gtp1_clk_n",
+                   "direction":"input"
+               },
+               "i_pcie_phy_rx_p":{
+                   "loc":"i_pcie_phy_rx_p",
+                   "direction":"input"
+               },
+               "i_pcie_phy_rx_n":{
+                   "loc":"i_pcie_phy_rx_n",
+                   "direction":"input"
+               },
+               "o_pcie_phy_tx_p":{
+                   "loc":"o_pcie_phy_tx_p",
+                   "direction":"output"
+               },
+               "o_pcie_phy_tx_n":{
+                   "loc":"o_pcie_phy_tx_n",
+                   "direction":"output"
+               }
+
+          }
+       }
+    },
+    "build_flags":{
+         "xst":{
+             "flags":{
+                 "-define":"{DDR3_W0_CH DDR3_R0_CH}"
+             }
+        }
+    },
+  "dependencies":[
+    "pcie_axi_bridge.v"
+  ]
+
+
+
+}
