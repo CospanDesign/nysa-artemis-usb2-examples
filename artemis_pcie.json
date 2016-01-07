@@ -8,15 +8,12 @@
           "filename":"wb_artemis_pcie_platform.v",
           "constraint_files":[
           ],
-          "cores":[
-              "pcie_axi_bridge.ngc"
-          ],
           "bind":{
                "i_clk_100mhz_gtp_p":{
                    "loc":"i_gtp1_clk_p",
                    "direction":"input"
                },
-               "i_clk_100mhz_gtp_p":{
+               "i_clk_100mhz_gtp_n":{
                    "loc":"i_gtp1_clk_n",
                    "direction":"input"
                },
@@ -47,10 +44,8 @@
              }
         }
     },
-  "dependencies":[
-    "pcie_axi_bridge.v"
-  ]
-
-
-
+    "dependencies":[
+      "pcie_bram_s6.v",
+      "gtpa1_dual_wrapper_tile.v"
+    ]
 }
