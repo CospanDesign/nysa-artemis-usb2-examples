@@ -7,6 +7,7 @@
        "pcie":{
           "filename":"wb_artemis_pcie_platform.v",
           "constraint_files":[
+            "artemis_pcie.ucf"
           ],
           "bind":{
                "i_clk_100mhz_gtp_p":{
@@ -41,7 +42,8 @@
          "xst":{
              "flags":{
                  "-define":"{DDR3_W0_CH DDR3_R0_CH}"
-             }
+             },
+             "-iobuf":"soft"
         }
     },
     "dependencies":[
